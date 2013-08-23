@@ -3,3 +3,4 @@
 let rec my_last = function
   | h :: [] -> h
   | h :: tl -> my_last tl
+  | []      -> raise Not_found
